@@ -1,48 +1,88 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        Programmer programmer = new Programmer();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("NAME: ");
+        programmer.name = sc.nextLine();
+        System.out.print("SURNAME: ");
+        programmer.surname = sc.nextLine();
+        System.out.print("AGE: ");
+        programmer.age = sc.nextInt();
 
-        Car car = new Car();
-        car.model = "Sedan";
-        car.color = "Black";
-        car.style = "Sporty";
-        car.dislacement = 2.5;
-
-        System.out.println(car.model);
-        System.out.println(car.color);
-        System.out.println(car.style);
-        System.out.println(car.dislacement);
-
-
-
-        Car car1 = new Car();
-        car1.model = "Crossover";
-        car1.color = "Silver";
-        car1.style = "Urban";
-        car1.dislacement = 2.2;
-
-        System.out.println(car1.model);
-        System.out.println(car1.color);
-        System.out.println(car1.style);
-        System.out.println(car1.dislacement);
+        System.out.println(programmer.name);
+        System.out.println(programmer.surname);
+        System.out.println(programmer.age);
+        System.out.print("Жылы: ");
+        System.out.println(programmer.getBirthDate());
 
 
 
-        Car car2 = new Car();
-        car2.model = "Hatchback";
-        car2.color = "Blue Metallic";
-        car2.style = "Sport / City";
-        car2.dislacement = 1.6;
+        Programmer programmer1 = new Programmer();
+        System.out.print("NAME: ");
+        programmer1.name = sc.next();
+        System.out.print("SURNAME: ");
+        programmer1.surname = sc.next();
+        System.out.print("AGE: ");
+        programmer1.age = sc.nextInt();
 
-        System.out.println(car2.model);
-        System.out.println(car2.color);
-        System.out.println(car2.style);
-        System.out.println(car2.dislacement);
+        System.out.println(programmer1.name);
+        System.out.println(programmer1.surname);
+        System.out.println(programmer1.age);
+        System.out.print("Жылы: ");
+        System.out.println(programmer1.getBirthDate());
     }
 }
 
 
+
+
+
+
+
+//        Car car = new Car();
+//        car.model = "Sedan";
+//        car.color = "Black";
+//        car.style = "Sporty";
+//        car.dislacement = 2.5;
+//
+//        System.out.println(car.model);
+//        System.out.println(car.color);
+//        System.out.println(car.style);
+//        System.out.println(car.dislacement);
+//
+//
+//
+//        Car car1 = new Car();
+//        car1.model = "Crossover";
+//        car1.color = "Silver";
+//        car1.style = "Urban";
+//        car1.dislacement = 2.2;
+//
+//        System.out.println(car1.model);
+//        System.out.println(car1.color);
+//        System.out.println(car1.style);
+//        System.out.println(car1.dislacement);
+//
+//
+//
+//        Car car2 = new Car();
+//        car2.model = "Hatchback";
+//        car2.color = "Blue Metallic";
+//        car2.style = "Sport / City";
+//        car2.dislacement = 1.6;
+//
+//        System.out.println(car2.model);
+//        System.out.println(car2.color);
+//        System.out.println(car2.style);
+//        System.out.println(car2.dislacement);
+//    }
+//}
+//
+//
 
 
 
