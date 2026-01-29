@@ -4,10 +4,29 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        User user = new User("Mirbek",16,"imanbekov58@gmail.com");
-        System.out.println(user.printInfo());
+        BankAccount account = new BankAccount("Imanbekov Mirbek",1000);
+
+        System.out.println(account.depoSit(500));
+        System.out.println(account.withDraw(300));
+        System.out.println(account.printBalance());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+//        User user = new User("Mirbek",16,"imanbekov58@gmail.com");
+//        System.out.println(user.printInfo());
+//    }
+//}
 
 
 
