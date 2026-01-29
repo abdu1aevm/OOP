@@ -4,39 +4,53 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Programmer programmer = new Programmer();
-        Scanner sc = new Scanner(System.in);
-        System.out.print("NAME: ");
-        programmer.name = sc.nextLine();
-        System.out.print("SURNAME: ");
-        programmer.surname = sc.nextLine();
-        System.out.print("AGE: ");
-        programmer.age = sc.nextInt();
-
-        System.out.println(programmer.name);
-        System.out.println(programmer.surname);
-        System.out.println(programmer.age);
-        System.out.print("Жылы: ");
-        System.out.println(programmer.getBirthDate());
-
-
-
-        Programmer programmer1 = new Programmer();
-        System.out.print("NAME: ");
-        programmer1.name = sc.next();
-        System.out.print("SURNAME: ");
-        programmer1.surname = sc.next();
-        System.out.print("AGE: ");
-        programmer1.age = sc.nextInt();
-
-        System.out.println(programmer1.name);
-        System.out.println(programmer1.surname);
-        System.out.println(programmer1.age);
-        System.out.print("Жылы: ");
-        System.out.println(programmer1.getBirthDate());
+        Triangle triangle = new Triangle();
+        triangle.a = 15;
+        triangle.b = 16;
+        triangle.c = 25;
+        triangle.area();
     }
 }
 
+
+
+
+
+
+
+//        Programmer programmer = new Programmer();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("NAME: ");
+//        programmer.name = sc.nextLine();
+//        System.out.print("SURNAME: ");
+//        programmer.surname = sc.nextLine();
+//        System.out.print("AGE: ");
+//        programmer.age = sc.nextInt();
+//
+//        System.out.println(programmer.name);
+//        System.out.println(programmer.surname);
+//        System.out.println(programmer.age);
+//        System.out.print("Жылы: ");
+//        System.out.println(programmer.getBirthDate());
+//
+//
+//
+//        Programmer programmer1 = new Programmer();
+//        System.out.print("NAME: ");
+//        programmer1.name = sc.next();
+//        System.out.print("SURNAME: ");
+//        programmer1.surname = sc.next();
+//        System.out.print("AGE: ");
+//        programmer1.age = sc.nextInt();
+//
+//        System.out.println(programmer1.name);
+//        System.out.println(programmer1.surname);
+//        System.out.println(programmer1.age);
+//        System.out.print("Жылы: ");
+//        System.out.println(programmer1.getBirthDate());
+//    }
+//}
+//
 
 
 
