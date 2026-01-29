@@ -4,13 +4,25 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Triangle triangle = new Triangle();
-        triangle.a = 15;
-        triangle.b = 16;
-        triangle.c = 25;
-        triangle.area();
+        User user = new User("Mirbek",16,"imanbekov58@gmail.com");
+        System.out.println(user.printInfo());
     }
 }
+
+
+
+
+
+
+
+
+//        Triangle triangle = new Triangle();
+//        triangle.a = 15;
+//        triangle.b = 16;
+//        triangle.c = 25;
+//        triangle.area();
+//    }
+//}
 
 
 
