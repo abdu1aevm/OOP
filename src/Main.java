@@ -4,14 +4,27 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount("Imanbekov Mirbek",1000);
+        Dog dog = new Dog(" Leo "," Black and brown "," German Shepherd");
+        System.out.println(dog.aboutDog());
 
-        System.out.println(account.depoSit(500));
-        System.out.println(account.withDraw(300));
-        System.out.println(account.printBalance());
+        Cat cat = new Cat("Max "," White "," Persian");
+        System.out.println(cat.aboutCat());
     }
 }
 
+
+
+
+
+
+//        BankAccount account = new BankAccount("Imanbekov Mirbek",1000);
+//
+//        System.out.println(account.depoSit(500));
+//        System.out.println(account.withDraw(300));
+//        System.out.println(account.printBalance());
+//    }
+//}
+//
 
 
 
