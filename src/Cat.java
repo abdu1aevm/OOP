@@ -13,8 +13,8 @@ public class Cat {
     }
 
     public String aboutCat(){
-        return name +
-                color +
-                breed ;
+        return "NAME : " + name +
+                "COLOR : " + color +
+               "BREED : " + breed ;
     }
 }

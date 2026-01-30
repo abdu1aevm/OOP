@@ -13,8 +13,8 @@ public class Dog {
     }
 
     public String aboutDog (){
-        return name +
-                color +
-                breed;
+        return "NAME : " + name +
+                "COLOR : " + color +
+                "BREED :" + breed;
     }
 }
