@@ -4,16 +4,31 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        MyClass myclass = new MyClass("Mirbek","Imanbekov",16);
-        System.out.println(myclass.result());
+        int[] grades = {5,4,5,4,4,4,4,3,5,5,4,4};
+        Students students = new Students("Adyl",grades);
+        students.printStudentInfo();
 
-
-
-        String[] lessons = {"Java","English"};
-        MyClass myClass1 = new MyClass("Mirbek", "Imanbekov", 16, lessons, "Plov");
-        System.out.println(myClass1.result());
+        int[] grades2 = {5,5,5,5,5,4,5,5,5,5,5,};
+        Students students2 = new Students("Jasmina",grades2);
+        students2.printStudentInfo();
     }
 }
+
+
+
+
+
+
+//        MyClass myclass = new MyClass("Mirbek","Imanbekov",16);
+//        System.out.println(myclass.result());
+//
+//
+//
+//        String[] lessons = {"Java","English"};
+//        MyClass myClass1 = new MyClass("Mirbek", "Imanbekov", 16, lessons, "Plov");
+//        System.out.println(myClass1.result());
+//    }
+//}
 
 
 
