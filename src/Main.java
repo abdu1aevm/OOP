@@ -4,62 +4,81 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Friends friends = new Friends();
-        System.out.println("----------1 `FRIEND----------");
-        System.out.print("Аты: ");
-        String friendName = scanner.next();
-        System.out.print("Жашы: ");
-        int friendAge = scanner.nextInt();
-        System.out.print("Бою: ");
-        int friendHeight = scanner.nextInt();
-        System.out.print("Профессиясы: ");
-        String friendProfession = scanner.next();
-        System.out.print("Хоббиси: ");
-        String friendHobby = scanner.next();
-        friends.result();
+        MyClass myclass = new MyClass("Mirbek","Imanbekov",16);
+        System.out.println(myclass.result());
 
 
-        System.out.println("----------2 `FRIEND----------");
-        System.out.print("Аты: ");
-        String friendName1 = scanner.next();
-        System.out.print("Жашы: ");
-        int friendAge1 = scanner.nextInt();
-        System.out.print("Бою: ");
-        int friendHeight1 = scanner.nextInt();
-        Friends friends1 = new Friends(friendName1,friendAge1,friendHeight1);
-        friends1.result();
 
-
-        System.out.println("----------3 `FRIEND----------");
-        System.out.print("Аты: ");
-        String friendName2 = scanner.next();
-        System.out.print("Жашы: ");
-        int friendAge2 = scanner.nextInt();
-        System.out.print("Бою: ");
-        int friendHeight2 = scanner.nextInt();
-        System.out.print("Профессиясы: ");
-        String friendProfession2 = scanner.next();
-        Friends friends2 = new Friends(friendName2,friendAge2,friendHeight2,friendProfession2);
-        friends2.result();
-
-
-        System.out.println("----------4 `FRIEND----------");
-        System.out.print("Аты: ");
-        String friendName3 = scanner.next();
-        System.out.print("Жашы: ");
-        int friendAge3 = scanner.nextInt();
-        System.out.print("Бою: ");
-        int friendHeight3 = scanner.nextInt();
-        System.out.print("Профессиясы: ");
-        String friendProfession3 = scanner.next();
-        System.out.print("Хоббиси: ");
-        String friendHobby3 = scanner.next();
-        Friends friends3 = new Friends(friendName3,friendAge3,friendHeight3,friendHobby3);
-        friends3.result();
-
+        String[] lessons = {"Java","English"};
+        MyClass myClass1 = new MyClass("Mirbek", "Imanbekov", 16, lessons, "Plov");
+        System.out.println(myClass1.result());
     }
 }
+
+
+
+//        Scanner scanner = new Scanner(System.in);
+//        Friends friends = new Friends();
+//        System.out.println("----------1 `FRIEND----------");
+//        System.out.print("Аты: ");
+//        String friendName = scanner.next();
+//        System.out.print("Жашы: ");
+//        int friendAge = scanner.nextInt();
+//        System.out.print("Бою: ");
+//        int friendHeight = scanner.nextInt();
+//        System.out.print("Профессиясы: ");
+//        String friendProfession = scanner.next();
+//        System.out.print("Хоббиси: ");
+//        String friendHobby = scanner.next();
+//        friends.result();
+//
+//
+//        System.out.println("----------2 `FRIEND----------");
+//        System.out.print("Аты: ");
+//        String friendName1 = scanner.next();
+//        System.out.print("Жашы: ");
+//        int friendAge1 = scanner.nextInt();
+//        System.out.print("Бою: ");
+//        int friendHeight1 = scanner.nextInt();
+//        Friends friends1 = new Friends(friendName1,friendAge1,friendHeight1);
+//        friends1.result();
+//
+//
+//        System.out.println("----------3 `FRIEND----------");
+//        System.out.print("Аты: ");
+//        String friendName2 = scanner.next();
+//        System.out.print("Жашы: ");
+//        int friendAge2 = scanner.nextInt();
+//        System.out.print("Бою: ");
+//        int friendHeight2 = scanner.nextInt();
+//        System.out.print("Профессиясы: ");
+//        String friendProfession2 = scanner.next();
+//        Friends friends2 = new Friends(friendName2,friendAge2,friendHeight2,friendProfession2);
+//        friends2.result();
+//
+//
+//        System.out.println("----------4 `FRIEND----------");
+//        System.out.print("Аты: ");
+//        String friendName3 = scanner.next();
+//        System.out.print("Жашы: ");
+//        int friendAge3 = scanner.nextInt();
+//        System.out.print("Бою: ");
+//        int friendHeight3 = scanner.nextInt();
+//        System.out.print("Профессиясы: ");
+//        String friendProfession3 = scanner.next();
+//        System.out.print("Хоббиси: ");
+//        String friendHobby3 = scanner.next();
+//        Friends friends3 = new Friends(friendName3,friendAge3,friendHeight3,friendProfession3,friendHobby3);
+//        friends3.result();
+//
+//    }
+//}
+
+
+
+
+
+
 //        Dog dog = new Dog(" Leo "," Black and brown "," German Shepherd");
 //        System.out.println(dog.aboutDog());
 //
